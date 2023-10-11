@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link for everyone - Raihana</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="checkbox"]
+        {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            appearance: none;
+            background-color: #62314e;
+            outline: none;
+            border-radius: 10px;
+            transition: .5s ease;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked
+        {
+           background-color: #B0578D;
+        }
+
+        input[type="checkbox"]:before
+        {
+           background-color: #FACBEA;
+           content: '';
+           position: absolute;
+           width: 16px;
+           height: 16px;
+           border-radius: 50%;
+           top: 2px;
+           left: 2px;
+           transition: .5s ease;
+           
+        }
+
+        input[type="checkbox"]:checked::before
+        {
+           transform: translateX(20px);
+        }
+        
+        .dark{
+            background: url(asset/background\ dark.jpg);
+        }
+    </style>
+
+</head>
+<body>
+    <input type="checkbox" name="" id="">
+    <script>
+        function ubahMode(){
+            const ubah = document.body;
+            ubah.classList.toggle("dark");
+        }
+    </script>
+    <div class="container">
+        <div class="img-container">
+            <img src="asset/profile kucheng.jpg" alt="profilekuuh" width="20%" height="20%">
+        </div>
+        <div class="title-container">
+            <h1>@Reyz</h1>
+            <p>Hello, my name is Raihana Syakirah Najla but most people call me Rere. <br>I'm 15 years old. A student at ABBS High School Solo.</p>
+            <p>Nice to meet you~!</p>
+        </div>
+
+        <!-- Link items -->
+        <a href="https://www.instagram.com/rere_najla/" class="link-item">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M16.5 7.5l0 .01"></path>
+                 </svg>
+            </div>
+            <p>Love to visit my instagram!</p>
+            <div class="hidden-button"></div>
+        </a>
+
+        <a href="https://www.youtube.com/@etrachansawit6932" class="link-item">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path>
+                    <path d="M10 9l5 3l-5 3z"></path>
+                 </svg>
+            </div>
+            <p>My favorite youtube channel!</p>
+            <div class="hidden-button"></div>
+        </a>
+        
+    </div>
+</body>
+</html>
